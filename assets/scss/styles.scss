@@ -1,0 +1,26 @@
+/* Colors
+ ******************************/
+/* Primary
+ ***************/
+$bright-orange: #e38826;
+$dark-cyan: #006970;
+$very-dark-cyan: #004241;
+/* Neutral
+ ***************/
+$transparent-white: #ffffffbf;
+$very-light-gray: #f2f2f2;
+
+/* Global Variables
+ ******************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $very-light-gray;
+}
+
+/* Body Variables
+ ******************************/
