@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/DalaScript/stats-preview-card-component)
-- [Live Site URL](https://DalaScript.github.io/stats-preview-card-component/)
+- [Solution URL](https://github.com/DalaScript/3-column-preview-card-component)
+- [Live Site URL](https://DalaScript.github.io/3-column-preview-card-component/)
 
 ## My process
 
