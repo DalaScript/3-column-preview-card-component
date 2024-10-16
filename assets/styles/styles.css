@@ -18,3 +18,103 @@ body {
 
 /* Body Variables
  ******************************/
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.cards-container {
+  margin: 88px 0;
+  border-radius: 8px;
+  max-width: 327px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  padding: 48px 49px;
+}
+.card--sedans {
+  background-color: #e38826;
+}
+.card--sedans .card__btn {
+  color: #e38826;
+}
+.card--suvs {
+  background-color: #006970;
+}
+.card--suvs .card__btn {
+  color: #006970;
+}
+.card--luxury {
+  background-color: #004241;
+}
+.card--luxury .card__btn {
+  color: #004241;
+}
+.card__img {
+  display: block;
+}
+.card__title {
+  margin-top: 35px;
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+.card__caption {
+  margin-top: 25px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+.card__btn {
+  margin-top: 25px;
+  width: 146px;
+  height: 48px;
+  border-radius: 25px;
+  border: none;
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .cards-container {
+    margin: 171px 0 129px;
+    max-width: 920px;
+    flex-direction: row;
+  }
+
+  .card {
+    padding: 48px;
+    flex-basis: 307px;
+  }
+  .card__btn {
+    margin-top: 83px;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .card__btn {
+    cursor: pointer;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+  }
+  .card__btn:hover {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+  }
+}

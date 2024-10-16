@@ -9,6 +9,7 @@ $very-dark-cyan: #004241;
  ***************/
 $transparent-white: #ffffffbf;
 $very-light-gray: #f2f2f2;
+$white: #ffffff;
 
 /* Global Variables
  ******************************/
@@ -24,3 +25,127 @@ body {
 
 /* Body Variables
  ******************************/
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.cards-container {
+    margin: 88px 0;
+    border-radius: 8px;
+    max-width: 327px;
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding: 48px 49px;
+
+    &--sedans {
+        background-color: $bright-orange;
+
+        .card__btn {
+            color: $bright-orange;
+        }
+    }
+
+    &--suvs { 
+        background-color: $dark-cyan;
+
+        .card__btn {
+            color: $dark-cyan;
+        }
+    }
+    
+    &--luxury {
+        background-color: $very-dark-cyan;
+
+        .card__btn {
+            color: $very-dark-cyan;
+        }
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__title {
+        margin-top: 35px;
+
+        font-family: 'Big Shoulders Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+
+        text-transform: uppercase;
+
+        color: $very-light-gray;
+    }
+    
+    &__caption {
+        margin-top: 25px;
+
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        
+        color: $white;
+
+        mix-blend-mode: normal;
+        opacity: 0.75;
+    }
+
+    &__btn {
+        margin-top: 25px;
+        width: 146px;
+        height: 48px;
+        border-radius: 25px;
+        border: none;
+        background-color: $very-light-gray;
+
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .cards-container {
+        margin: 171px 0 129px;
+        max-width: 920px;
+        flex-direction: row;
+
+    }
+
+    .card {
+        padding: 48px;
+        flex-basis: 307px;
+
+        &__btn {
+            margin-top: 83px;
+        }
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .card {
+        &__btn {
+            cursor: pointer;
+            transition: background-color .3s ease-out, color .3s ease-out;
+
+            &:hover {
+                border: 2px solid $white;
+                background-color: transparent;
+                color: $white;
+            }
+        }
+    }
+}
