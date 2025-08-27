@@ -37,8 +37,8 @@ Users should be able to:
 
 ### 🔗 Links
 
-  - [🔴 Live Demo](https://dalascript.github.io/challenge/)
-  - [🗂️ GitHub Repository](https://github.com/DalaScript/challenge)
+  - [🔴 Live Demo](https://dalascript.github.io/3-column-preview-card-component/)
+  - [🗂️ GitHub Repository](https://github.com/DalaScript/3-column-preview-card-component)
 
 ### 🛠️ Built with
 
